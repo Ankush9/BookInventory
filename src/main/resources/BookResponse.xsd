@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	jaxb:version="2.0">
+
+	<xs:element name="book">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="title" type="xs:string" maxOccurs="1" />
+				<xs:element name="barcode" type="xs:string" maxOccurs="1" />
+				<xs:element name="author" type="xs:string" maxOccurs="1" />
+				<xs:element name="noOfPages" type="xs:int" maxOccurs="1" />
+				<xs:element name="isRead" type="xs:boolean" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
